@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(249, 197, 249);
+}
+
+button {
+    font-size: 40px;
+    background-color: rgb(0, 255, 0) !important;
+}
+
+h1,
+h2 {
+    color: rgb(15, 87, 3);
+}
+
+.tag {
+    background-color: orange;
+    color: rgb(50, 65, 80);
+    font-size: 16px;
+}
+
+
+footer a {
+    color: rgb(55, 77, 6)
+}
+
+input+button {
+    background-color: pink;
+}
+
+footer>a {
+    color: red;
+}
+
+input[type="password"] {
+    color: lightblue;
+}
+
+a[href*="pup"] {
+    color: rgb(0, 0, 255);
+}
+
+.post button:hover {
+    background-color: rgb(0, 255, 0);
+    color: #cb2c2c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: cornflowerblue;
+}
+
+.post:nth-of-type(3n) {
+    background-color: seagreen;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: yellow;
+}
+
+#signup {
+    background-color: rgb(117, 11, 150);
+    color: tomato;
+}
