@@ -2,30 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Product</title>
 </head>
 
 <body>
-    <h1>Add a Product</h1>
+  <h1><%= farm.name %></h1>
+  <h2>Add a Product</h2>
 
-    <form action="/products" method="post">
-        <label for="name">Product Name</label>
-        <input type="text" name="name" placeholder="Product Name">
+  <form action="/farms/<%= farm._id %>/products" method="post">
+    <label for="name">Product Name</label>
+    <input type="text" name="name" placeholder="Product Name">
 
-        <label for="price">Unit Price</label>
-        <input type="number" name="price" placeholder="Product Price">
-        <label for="category">Category</label>
-        <select name="category" id="category">
-            <% for(let category of categories) { %>
-                <option value="<%= category %>">
-                    <%= category %>
-                </option>
-                <% } %>
-        </select>
-        <button type="submit">submit</button>
-    </form>
+    <label for="price">Unit Price</label>
+    <input type="number" name="price" placeholder="Product Price">
+    <label for="category">Category</label>
+    <select name="category" id="category">
+      <% for(let category of categories) { %>
+      <option value="<%= category %>">
+        <%= category %>
+      </option>
+      <% } %>
+    </select>
+    <button type="submit">submit</button>
+  </form>
+
+  <a href="/farms/<%= farm._id %>">Back to Farm</a>
 
 </body>
 
